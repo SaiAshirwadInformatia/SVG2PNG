@@ -22,6 +22,9 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "~2.1.4"
+    "jquery": "~2.1.4",
+    "Blob.js": "eligrey/Blob.js",
+    "canvas-toBlob.js": "~0.1.3",
+    "file-saver.js": "~1.20150507.2"
   }
 }

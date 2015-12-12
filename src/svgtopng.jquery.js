@@ -22,7 +22,6 @@ var svgtopng = null;
     };
 
     var getSVG = function(el) {
-        console.log($(el).prop('tagName'));
         if (el === undefined || el === '') {
             el = $('svg').get(0);
         } else if (typeof el === 'string') {
@@ -64,7 +63,7 @@ var svgtopng = null;
 
         $(s).width(di.width);
         $(s).height(di.height);
-        return $(s).html() || (new window.XMLSerializer()).serializeToString(s);
+        return $(s).prop('outerHTML') || (new window.XMLSerializer()).serializeToString(s);
     };
 
     var getUri = function(el){
@@ -117,7 +116,7 @@ var svgtopng = null;
                     saveAs(b, f);
                 });
             }else{
-                saveUri(canvas.toDataUrl('image/png'), name);
+            	saveUri(canvas.toDataURL('image/png'), f);
             }
         });
         $(image).attr('src', uri);
