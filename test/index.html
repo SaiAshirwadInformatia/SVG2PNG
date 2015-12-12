@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Test SVG To PNG</title>
+		<meta name="author" content="Rohan Sakhale<rs@saiashirwad.com>">
+
+		<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="../src/svgtopng.jquery.js"></script>
+	</head>
+	<body>
+		<div>
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="193px" height="93px" version="1.1" style="background-color: rgb(255, 255, 255);"><defs/><g transform="translate(0.5,0.5)"><rect x="1" y="1" width="120" height="60" fill="#ffffff" stroke="#000000" pointer-events="none"/><rect x="71" y="31" width="120" height="60" rx="9" ry="9" fill="#ffffff" stroke="#000000" pointer-events="none"/></g></svg>
+		</div>
+		<script>
+		$('svg').svgtopng('sampletest.png');
+		</script>
+	</body>
+</html>

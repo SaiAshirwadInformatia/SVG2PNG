@@ -1,0 +1,27 @@
+{
+  "name": "svgtopng",
+  "authors": [
+    "Rohan Sakhale <rs@saiashirwad.com>"
+  ],
+  "description": "Save SVG to PNG",
+  "main": "svgtopng.jquery.js",
+  "moduleType": [],
+  "keywords": [
+    "svgtopng",
+    "svg",
+    "png",
+    "save"
+  ],
+  "license": "MIT",
+  "homepage": "http://saiashirwad.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
